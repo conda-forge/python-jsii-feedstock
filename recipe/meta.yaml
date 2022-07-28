@@ -22,8 +22,10 @@ requirements:
     # Original requirement: >=21.2,==21.*
     - attrs >=21.2,<22.0
     - cattrs >=1.8,<22.2
+    - publication >=0.0.3
     - python >=3.7
     - python-dateutil
+    - typeguard >=2.13.3,<3
     - typing_extensions >=3.7,<5.0
 
 test:
