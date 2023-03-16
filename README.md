@@ -1,11 +1,11 @@
-About python-jsii
-=================
+About python-jsii-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/python-jsii-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/aws/jsii
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/python-jsii-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python client for jsii runtime
 
