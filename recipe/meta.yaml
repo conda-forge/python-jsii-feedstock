@@ -12,21 +12,25 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - pip
     - python >=3.7
+    - setuptools >=62.2,<63.dev0
+    - wheel >=0.37,<1.dev0
+    - pip
   run:
-    - attrs >=21.2,<23.0
-    - cattrs >=1.8,<22.3
+    - python >=3.7
+    - attrs >=21.2,<24.0
+    - cattrs >=1.8,<23.2
     - importlib_resources >=5.2.0
     - publication >=0.0.3
-    - python >=3.7
+    - typeguard >=2.13.3,<2.14.dev0
     - python-dateutil
-    - typeguard >=2.13.3,<3
     - typing_extensions >=3.7,<5.0
+    # calls node CLI
+    - nodejs >=16,<18
 
 test:
   imports:
@@ -41,8 +45,11 @@ about:
   summary: Python client for jsii runtime
   dev_url: https://github.com/aws/jsii.git
   license: Apache-2.0
-  license_file: NOTICE
+  license_file:
+    - NOTICE
+    - LICENSE
 
 extra:
   recipe-maintainers:
     - manics
+    - ocefpaf
