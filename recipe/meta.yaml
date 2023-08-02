@@ -1,5 +1,5 @@
 {% set name = "jsii" %}
-{% set version = "1.85.0" %}
+{% set version = "1.86.1" %}
 
 package:
   name: python-{{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jsii-{{ version }}.tar.gz
-  sha256: b77194cf053c06c6bdffc887a4d1d2a41113c6f4780a7d78d70a780a70998008
+  sha256: 44f9a820eea92c9508693f72d3129b5a080421c949c32303f4f7b2cc98a81f59
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
