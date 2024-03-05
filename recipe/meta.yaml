@@ -16,21 +16,21 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - setuptools >=62.2,<63.dev0
     - wheel >=0.37,<1.dev0
     - pip
   run:
-    - python >=3.7
+    - python >=3.8
     - attrs >=21.2,<24.0
-    - cattrs >=1.8,<23.2
+    - cattrs >=1.8,<23.3
     - importlib_resources >=5.2.0
     - publication >=0.0.3
     - typeguard >=2.13.3,<2.14.dev0
     - python-dateutil
-    - typing_extensions >=3.7,<5.0
+    - typing_extensions >=3.8,<5.0
     # calls node CLI
-    - nodejs >=16,<18
+    - nodejs >=16
 
 test:
   imports:
