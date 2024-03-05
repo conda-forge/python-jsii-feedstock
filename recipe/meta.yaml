@@ -1,5 +1,5 @@
 {% set name = "jsii" %}
-{% set version = "1.94.0" %}
+{% set version = "1.95.0" %}
 
 package:
   name: python-{{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jsii-{{ version }}.tar.gz
-  sha256: 175abc356603d98f18ab6f6aa74bfeae253e4e56340aef9dc40bbb1a6a59868b
+  sha256: f2461a0c1fdd6bb400caac5825596b0068a8c3adb9184549366adcf272815172
 
 build:
   noarch: python
@@ -16,21 +16,21 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - setuptools >=62.2,<63.dev0
     - wheel >=0.37,<1.dev0
     - pip
   run:
-    - python >=3.7
+    - python >=3.8
     - attrs >=21.2,<24.0
-    - cattrs >=1.8,<23.2
+    - cattrs >=1.8,<23.3
     - importlib_resources >=5.2.0
     - publication >=0.0.3
     - typeguard >=2.13.3,<2.14.dev0
     - python-dateutil
-    - typing_extensions >=3.7,<5.0
+    - typing_extensions >=3.8,<5.0
     # calls node CLI
-    - nodejs >=16,<18
+    - nodejs >=16
 
 test:
   imports:
