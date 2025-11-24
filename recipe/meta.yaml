@@ -17,16 +17,16 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools >=62.2,<63.dev0
-    - wheel >=0.37,<1.dev0
+    - setuptools >=80.3,<81.dev0
+    - wheel >=0.45,<1.dev0
     - pip
   run:
     - python >={{ python_min }}
-    - attrs >=21.2,<24.0
-    - cattrs >=1.8,<23.3
+    - attrs >=21.2,<26.0
+    - cattrs >=1.8,<25.4
     - importlib_resources >=5.2.0
     - publication >=0.0.3
-    - typeguard >=2.13.3,<2.14.dev0
+    - typeguard >=2.13.3,<4.5.0
     - python-dateutil
     - typing_extensions >=3.8,<5.0
     # calls node CLI
