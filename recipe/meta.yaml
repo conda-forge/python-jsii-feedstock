@@ -26,7 +26,7 @@ requirements:
     - cattrs >=1.8,<25.4
     - importlib_resources >=5.2.0
     - publication >=0.0.3
-    - typeguard >=2.13.3,<4.5.0
+    - typeguard==2.13.3
     - python-dateutil
     - typing_extensions >=3.8,<5.0
     # calls node CLI
