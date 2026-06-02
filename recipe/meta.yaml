@@ -1,5 +1,5 @@
 {% set name = "jsii" %}
-{% set version = "1.132.0" %}
+{% set version = "1.133.0" %}
 
 package:
   name: python-{{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/jsii-{{ version }}.tar.gz
-  sha256: 7dd7af915f540e0b8c0f5162a985f6773a522d0166b690bf4156abf493826bc2
+  sha256: 6fe14c5a0cc414390470663a83500d477861d0dbe140739de462d626df6a18fa
 
 build:
   noarch: python
@@ -22,8 +22,8 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - attrs >=21.2,<26.0
-    - cattrs >=1.8,<25.4
+    - attrs >=21.2,<27.0
+    - cattrs >=1.8,<27.0
     - importlib_resources >=5.2.0
     - publication >=0.0.3
     - typeguard ==2.13.3
