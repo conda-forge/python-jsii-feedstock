@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "1.140.0"
+  version: 1.141.0
 
 package:
   name: python-jsii
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/j/jsii/jsii-${{ version }}.tar.gz
-  sha256: 454c874d963a862f6b90bc013c45a720e51292659f57249d9cae7cb2a189ec0e
+  sha256: e574efa7523b2218f6a4495e9f1ba75c9947b84965c5a8079931f37d7911a687
 
 build:
   number: 0
@@ -30,9 +30,6 @@ requirements:
     - typeguard ==2.13.3
     - python-dateutil
     - typing_extensions >=3.8,<5.0
-    # calls node CLI
-    - nodejs >=16
-
 tests:
   - python:
       imports:
@@ -40,7 +37,7 @@ tests:
       pip_check: true
       python_version:
         - ${{ python_min }}.*
-        - "*"
+        - '*'
 
 about:
   summary: Python client for jsii runtime
