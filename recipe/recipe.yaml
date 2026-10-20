@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 1.141.0
+  version: "1.142.0"
 
 package:
   name: python-jsii
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/j/jsii/jsii-${{ version }}.tar.gz
-  sha256: e574efa7523b2218f6a4495e9f1ba75c9947b84965c5a8079931f37d7911a687
+  sha256: 2fe1c5f2a5a405a5fbaaafb8b362cdf6a30171589e508c01682f33c5d529172f
 
 build:
   number: 0
